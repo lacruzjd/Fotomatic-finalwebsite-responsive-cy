@@ -1,2 +1,3 @@
 # Fotomatic-finalwebsite-responsive-cy
-proyecto final website-responsive
+
+![Especificaciones](./fotomatic_spec_landing_v3_.png)

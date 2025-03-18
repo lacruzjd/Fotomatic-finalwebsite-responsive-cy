@@ -1,0 +1,314 @@
+/* Universal styles */
+html {
+  background-color: #dcdcdc;
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+.center {
+  text-align: center;
+}
+
+/* Header Desktop */
+header {
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+}
+
+header .content {
+  height: 85px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .logo {
+  color: #4a4a4a;
+  font-family: 'Roboto', monospace;
+  font-size: 24px;
+}
+
+.desktop ul li {
+  font-size: 16px;
+  display: inline;
+  margin-left: 2rem;
+}
+
+.desktop .icon {
+  width: 1em;
+}
+
+.mobile {
+  width: 100%;
+  display: none;
+}
+
+.mobile ul {
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile .button {
+  color: white;
+  border-radius: 4px;
+  background-color: #9dc20a;
+  padding: 3px 8px;
+}
+
+/* Main Content */
+
+.main-content {
+  width: 100%;
+  position: absolute;
+  top: 85px;
+}
+
+.banner {
+  padding: 170px 0 170px 100px;
+  background-image: url(../images/banner-landingpage.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+#sign-up-cta {
+  padding: 32px;
+  background-color: #9dc20a;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  color: white;
+  float: left;
+}
+
+#sign-up-cta .striking {
+  margin: 12px 0;
+  font-family: 'Rubik';
+  font-size: 50px;
+}
+
+#sign-up-cta .cursive {
+  font-family: 'Damion';
+  font-size: 2rem;
+}
+
+#sign-up-cta .email {
+  margin: 0 80px;
+  width: 408px;
+  font-family: 'Roboto';
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+#sign-up-cta .button {
+  padding: 10px;
+  margin: 26px;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+}
+
+
+#features-section {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  padding: 32px;
+  margin: 19px;
+  background-color: white;
+}
+
+.feature img {
+  width: 100%
+}
+
+.feature .content {
+  margin: 40px;
+  color: #4a4a4a;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#filters-section {
+  margin-top: 46px;
+  padding: 64px 1%;
+  background-color: #4a4a4a;
+  color: #d1d1d1;
+}
+
+#filters-section .content h3 {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+#filters-section .content {
+  margin: 0 0 80px;
+}
+
+#filters-section .images-container {
+  display: flex;
+
+}
+
+#filters-section .image-container {
+  width: calc(100% /4);
+}
+
+#filters-section .image-container img {
+  width: 100%
+}
+
+#quotes-section {
+  padding: 80px;
+  font-size: 30px;
+  font-family: 'Platino';
+}
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 760px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .email {
+    display: none;
+  }
+
+  #sign-up-cta {
+    background-color: transparent;
+    border: none;
+  }
+
+  #features-section {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #features-section {
+    margin: 0;
+
+  }
+
+  #features-section .feature:first-of-type {
+    margin: 0;
+    padding: 16px 0 32px 0;
+    background-color: transparent;
+
+  }
+
+  #features-section .feature:last-of-type {
+    margin: 0;
+    background-color: white;
+
+  }
+
+  #filters-section {
+    margin: 0;
+  }
+
+  .images-container .extra {
+    display: none
+  }
+
+  #filters-section .image-container {
+    width: calc(100% /3);
+  }
+
+  #quotes-section span {
+    display: block;
+    margin: 20px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width:1024px) {
+  .mobile {
+    width: 100px;
+    display: block;
+  }
+
+  .mobile li {
+    display: none;
+  }
+
+  .mobile li:last-child {
+    display: block;
+  }
+
+  .content .logo {
+    flex-grow: 2;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #sign-up-cta {
+    background-color: transparent;
+    border: none;
+  }
+
+
+}
