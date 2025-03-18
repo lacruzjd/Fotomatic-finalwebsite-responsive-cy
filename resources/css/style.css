@@ -25,14 +25,14 @@ header .content {
   align-items: center;
 }
 
-.content .logo {
+.logo {
   color: #4a4a4a;
   font-family: 'Roboto', monospace;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .desktop ul li {
-  font-size: 16px;
+  font-size: 1rem;
   display: inline;
   margin-left: 2rem;
 }
@@ -101,7 +101,7 @@ header .content {
   width: 408px;
   font-family: 'Roboto';
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #sign-up-cta .button {
@@ -110,7 +110,6 @@ header .content {
   border-radius: 4px;
   background-color: #4a4a4a;
 }
-
 
 #features-section {
   margin-top: 64px;
@@ -137,13 +136,13 @@ header .content {
 h2 {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 h3 {
   font-family: 'Roboto';
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #filters-section {
@@ -153,20 +152,19 @@ h3 {
   color: #d1d1d1;
 }
 
-#filters-section .content h3 {
-  font-family: 'Roboto';
-  font-weight: lighter;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
 #filters-section .content {
   margin: 0 0 80px;
 }
 
+#filters-section .content h3 {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 #filters-section .images-container {
   display: flex;
-
 }
 
 #filters-section .image-container {
@@ -179,12 +177,11 @@ h3 {
 
 #quotes-section {
   padding: 80px;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'Platino';
 }
 
 /* Footer */
-
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
@@ -202,7 +199,6 @@ footer .copyright {
 
 
 /* Mobile */
-
 @media only screen and (max-width: 760px) {
   .mobile {
     display: block;
@@ -267,15 +263,17 @@ footer .copyright {
   #quotes-section span {
     display: block;
     margin: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 
   footer {
-    font-size: 10px;
+    font-size: .625rem;
   }
 }
 
+
+/* tablet */
 @media only screen and (min-width: 760px) and (max-width:1024px) {
   .mobile {
     width: 100px;
@@ -309,6 +307,5 @@ footer .copyright {
     background-color: transparent;
     border: none;
   }
-
 
 }
